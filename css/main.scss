@@ -1,0 +1,18 @@
+@import 'common';
+//main.scss
+
+main{
+  overflow:hidden;
+  clear:both;//header영역에서 혹시 사용된 float속성이 있다면 float속성해제한다.
+  > #movie{
+    height:100vh;
+    background: $line_color_g;
+    > video{width:100%;}
+  }
+  >#top3{height:1146px;background: green;}
+  > #intro{height:923px;background: orange;}
+  > #test_drive{height:923px;background: #972d2d;}
+  > #event{height:923px;background: #4d2d97;}
+  > #buy{height:923px;background: #526e11 ;}
+  > #customer{height:923px;background: #a05d73 ;}
+}

@@ -67,4 +67,40 @@ address {
   position: absolute;
   border-top: 2px solid #333;
   line-height: 30px;
-}/*# sourceMappingURL=common.css.map */
+}
+
+main {
+  overflow: hidden;
+  clear: both;
+}
+main > #movie {
+  height: 100vh;
+  background: #ccc;
+}
+main > #movie > video {
+  width: 100%;
+}
+main > #top3 {
+  height: 1146px;
+  background: green;
+}
+main > #intro {
+  height: 923px;
+  background: orange;
+}
+main > #test_drive {
+  height: 923px;
+  background: #972d2d;
+}
+main > #event {
+  height: 923px;
+  background: #4d2d97;
+}
+main > #buy {
+  height: 923px;
+  background: #526e11;
+}
+main > #customer {
+  height: 923px;
+  background: #a05d73;
+}/*# sourceMappingURL=main.css.map */
