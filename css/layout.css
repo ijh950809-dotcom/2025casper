@@ -28,6 +28,47 @@ address {
   color: #333 !important;
 }
 
+.modal {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0px;
+  z-index: 10000;
+}
+
+.modal > .modal_inner {
+  width: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 100;
+  transform: translate(-50%, -50%);
+}
+
+.modal #c_btn {
+  background-color: #fff;
+  text-decoration: none;
+  color: #333;
+  border: none;
+  padding: 0px 16px;
+  margin-left: 190px;
+}
+
+.modal img {
+  width: 100%;
+  display: block;
+}
+
+.btn_area {
+  background-color: #fff;
+  width: 400px;
+  height: 30px;
+  position: absolute;
+  border-top: 2px solid #333;
+  line-height: 30px;
+}
+
 header {
   position: fixed;
   top: 0px;
@@ -123,7 +164,7 @@ header nav .gnb a:hover {
   background: #006EFF;
 }
 #m_nav > ul a {
-  color: #fff;
+  color: #fff !important;
   display: inline-block;
   width: 160px;
   text-align: center;
