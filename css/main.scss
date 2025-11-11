@@ -56,10 +56,8 @@ main{
       @include arrow_btn;
     }
   }
-  >#top3{height:1146px;background: rgb(173, 223, 173);}
-  > #intro{height:923px;background: rgb(219, 204, 175);}
-  > #test_drive{height:923px;background: #b1a9f5;}
-  > #event{height:923px;background: #b5f0f8;}
+  >#top3{padding-bottom:50px;}
+  > #event{background: #ccc;}
   > #buy{height:923px;background: #f2f7b6 ;}
   > #customer{height:923px;background: #ffa6c3 ;}
 }
@@ -171,8 +169,8 @@ main{
   display:inline-block;
   width:56px; height:40px;
   text-indent: -9999px;
-  float:left;
   margin-right:10px;
+  float:left;
 }
 .khaki{background: #494b3e;}
 .black{background: #000;}
@@ -183,3 +181,122 @@ border:1px solid #ccc;}
 #top3 .swiper-button-next::after, #top3 .swiper-button-next::before{
   color:$txt_color3 !important;
 }
+
+//3. 소개페이지 서식
+#intro{
+  height:100vh;
+  overflow: hidden;
+  position:relative;
+}
+#intro > h2{
+  position:absolute;
+  width:100%;
+  z-index: 100;
+}
+.intro_title_left, .intro_title_right{
+  position:absolute;
+  z-index: 100;
+  font-size:30px;
+  font-weight:500;
+  line-height:40px;
+  
+}
+.intro_title_left{
+  top:150px;
+  //left:130px;
+  left:-330px;
+}
+.intro_title_right{
+  bottom:100px;
+  //right:150px;
+  right:-300px;
+  text-align: right;
+}
+#intro video{
+  width:100%;
+}
+#intro .btn{
+  position:absolute;
+  bottom:100px;
+  left:50%;transform: translateX(-50%);
+  z-index: 100;
+}
+//4. 시승신청(체험)
+#test_drive{
+  text-align: center;
+  > .p01{
+    
+    font-size:$t_size_ss;
+  }
+  > article{
+    width:430px;height:280px;
+    border:1px solid $line_color_g;
+    padding:15px;
+    margin-top:50px;
+    display:inline-block;
+    vertical-align:middle ;
+    >h3{
+      font-size:24px;
+      padding-top:20px;
+      font-weight: bold;
+      line-height: 40px;
+    }
+    p{
+      padding:20px 0px;
+      line-height: 22px;
+      margin-bottom:30px;
+    }
+  }
+}
+@mixin btn1{
+  padding:10px 60px;
+  color:$txt_color2;
+  background: $txt_color3;
+  line-height:30px;
+}
+.test_d_btn1{
+  @include btn1;
+}
+.test_d_btn2{
+  display: block;
+  position:relative;
+  top:20px;
+  color:$nav_color01;
+  font-weight: 450;
+}
+.test_d_p{transform: translateY(50px);
+}
+
+.test_drive_r .test_d_p{
+  transform: translateY(64px);
+}
+
+//5. 이벤트 콘텐츠 서식
+#event{
+  text-align: center;
+  
+  >.p01{font-size:$t_size_ss;}
+  >.event_slide{
+    top:100px;
+    position: relative;
+    padding-bottom:200px;
+    width:100%;
+
+    }
+    >.swiper-pagination{
+      position:relative;
+      bottom:0px;
+      transform: translateY(30px);
+    >.swiper-pagination-bullet{
+      transition: 0.5s;
+      width:15px;height:15px;
+    }
+    >.swiper-pagination-bullet-active{
+      width:70px;
+      height:15px;
+      border-radius: 10px;
+    }
+  }
+  }
+}
+
