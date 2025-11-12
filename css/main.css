@@ -128,14 +128,6 @@ main > #top3 {
 main > #event {
   background: #ccc;
 }
-main > #buy {
-  height: 923px;
-  background: #f2f7b6;
-}
-main > #customer {
-  height: 923px;
-  background: #ffa6c3;
-}
 
 .btn {
   border: 1px solid #333;
@@ -361,24 +353,176 @@ main > #customer {
   top: 100px;
   position: relative;
   padding-bottom: 200px;
-  width: 100%;
-  overflow: hidden;
 }
-#event > .event_slide .swiper-slide {
-  width: 100%;
-}
-#event > .event_slide > .swiper-pagination {
+#event .swiper-pagination {
   position: relative;
   bottom: 0px;
   transform: translateY(30px);
 }
-#event > .event_slide > .swiper-pagination > .swiper-pagination-bullet {
+#event .swiper-pagination > .swiper-pagination-bullet {
   transition: 0.5s;
   width: 15px;
   height: 15px;
 }
-#event > .event_slide > .swiper-pagination > .swiper-pagination-bullet-active {
+#event .swiper-pagination > .swiper-pagination-bullet-active {
   width: 70px;
   height: 15px;
   border-radius: 10px;
+}
+
+#buy {
+  text-align: center;
+}
+#buy > .p01 {
+  font-size: 16px;
+  line-height: 50px;
+}
+#buy h3 {
+  font-size: 20px;
+  padding: 40px 0px 20px 0px;
+  font-weight: bold;
+}
+#buy .t_color {
+  color: #3B8BAE;
+}
+#buy .buy_info_list {
+  display: grid;
+  width: 1200px;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 33.333333%);
+}
+#buy .buy_info_list > li {
+  padding-top: 50px;
+}
+#buy .buy_info_list > li > h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+#buy .buy_info_list > li > img {
+  width: 80px;
+  padding: 15px 0px;
+}
+#buy .buy_info_list > li > .p02 {
+  line-height: 20px;
+}
+#buy .buy_info_list > li:last-child {
+  grid-area: 3/1/4/4;
+}
+#buy .buy_info_list > li:last-child iframe {
+  width: 70%;
+  height: 430px;
+}
+
+#customer {
+  background: #ededed;
+}
+#customer > article {
+  padding: 24px 0px;
+  width: 1200px;
+  margin: 15px auto;
+  background: #fff;
+}
+#customer > article > h3 {
+  font-size: 18px;
+  text-align: center;
+  padding: 60px 0px 20px 0px;
+  font-weight: bold;
+}
+#customer > article .ars_left {
+  border-right: 1px solid #ccc;
+}
+#customer > article .ars_left, #customer > article .ars_right {
+  width: 50%;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  float: left;
+  display: flex;
+  justify-content: space-around;
+}
+#customer > article .ars_left > p, #customer > article .ars_right > p {
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+  text-align: center;
+  align-items: center;
+}
+#customer > article .ars_left > p > a, #customer > article .ars_right > p > a {
+  color: #006EFF;
+}
+#customer > article .ars_left > dl, #customer > article .ars_right > dl {
+  line-height: 24px;
+}
+#customer > article .ars_left > dl > dt, #customer > article .ars_right > dl > dt {
+  font-weight: bold;
+}
+#customer > article strong {
+  font-weight: 500;
+  font-size: 16px;
+}
+#customer > article .car_icon, #customer > article .member_icon {
+  background: url("../images/bg-support-ars.png");
+  display: inline-block;
+  height: 46px;
+  text-indent: -9999px;
+  margin-top: 30px;
+}
+#customer > article .car_icon {
+  width: 75px;
+}
+#customer > article .member_icon {
+  width: 60px;
+  background-position: -90px 0px;
+  transform: translateY(-30px);
+}
+#customer .cs_etc {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+#customer .cs_etc > li {
+  background: #fff;
+  width: 290px;
+  position: relative;
+  padding-bottom: 20px;
+}
+#customer .cs_etc > li > h3 {
+  font-size: 18px;
+  padding: 60px 0px 20px 30px !important;
+  font-weight: bold;
+}
+#customer .cs_etc > li > p, #customer .cs_etc > li a {
+  padding: 0px 30px;
+  text-align: left;
+  line-height: 24px;
+}
+#customer .cs_etc > li > p:first-of-type {
+  font-weight: bold;
+}
+#customer .cs_etc > li a {
+  color: #006EFF;
+  margin: 0 auto;
+}
+#customer .cs_etc > li a > img {
+  text-align: center;
+  padding: 10px 0px 10px 30px;
+}
+#customer .cs_etc > li > .btn01 {
+  padding: 5px 20px;
+  color: #fff;
+  background: #225499;
+  line-height: 30px;
+  position: absolute;
+  bottom: 0px;
+  display: block;
+  width: 100px;
+  margin: 0px 0px 15px 65px;
+  text-align: center;
+}
+
+.clearfix {
+  clear: both;
+  content: "";
+  display: block;
 }/*# sourceMappingURL=main.css.map */
