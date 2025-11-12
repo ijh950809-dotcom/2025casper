@@ -353,6 +353,7 @@ main > #event {
   top: 100px;
   position: relative;
   padding-bottom: 200px;
+  width: 1200px;
 }
 #event .swiper-pagination {
   position: relative;
