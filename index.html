@@ -306,6 +306,11 @@
       </ul>
     </section>
 
+    <!-- 랜덤이미지 -->
+    <section class="event_random">
+      <div id="random"></div>
+    </section>
+
   </main>
 
   <!-- 하단푸터 영역 -->
@@ -529,5 +534,16 @@
     });
       });
   </script>
+    <!-- 랜덤이미지 -->
+    <script>
+      //1. 변수선언
+      let n = 1;
+  
+      n = Math.floor(Math.random()*2)+1;
+  
+      console.log(n);
+    
+        document.getElementById('random').innerHTML='<img src="./images/ran_banner0'+ n +'.jpg" alt="">';
+    </script>
 </body>
 </html>

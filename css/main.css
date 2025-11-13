@@ -527,4 +527,11 @@ main > #event {
   clear: both;
   content: "";
   display: block;
+}
+
+.event_random {
+  margin: 0 auto;
+  text-align: center;
+  background: #ededed;
+  padding: 15px 0px;
 }/*# sourceMappingURL=main.css.map */
