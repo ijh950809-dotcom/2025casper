@@ -34,7 +34,7 @@
     </h1>
 
     <!-- 메인메뉴 -->
-    <nav>
+    <nav aria-label="메인메뉴">
       <ul class="gnb">
         <li><a href="#intro" title="소개" class="arctic_scroll">소개</a></li>
         <li><a href="#test_drive" title="체험" class="arctic_scroll">체험</a></li>
@@ -46,7 +46,7 @@
 
     <!-- 오른쪽 끝에 배치될 아이콘 2개 -->
     <div class="nav_icon icon1">
-      <span class="fas fa-user"></span>
+      <a href="login.php" title="로그인페이지로 이동하기"><span class="fas fa-user"></span></a>
       <span>로그인</span>
     </div>
     <div class="nav_icon icon2">
@@ -57,7 +57,7 @@
     <!-- 오른쪽 고정 내비게이션 -->
     
   </header>
-  <nav id="m_nav">
+  <nav id="m_nav" aria-label="우측고정메뉴">
     <ul>
       <li><span class="num">1</span><a href="#intro" title="소개" class="arctic_scroll">소개</a></li>
       <li><span class="num">2</span><a href="#test_drive" title="체험" class="arctic_scroll">체험</a></li>
@@ -77,11 +77,10 @@
         <a href="https://casper.hyundai.com/vehicles/benefit" title="구매혜택보기">구매 혜택보기</a>
         <a href="https://casper.hyundai.com/vehicles/highlight" title="자세히 보기">자세히 보기</a>
       </article>
-      </a>
-      <video muted autoplay loop="infinite">
+      <video muted autoplay loop>
         <source src="./images/main_KV.webm" type="video/webm"> 
       </video>
-      <a href="#top3" class="'arctic_scroll" id="next_btn">다음 페이지</a>
+      <a href="#top3" class="arctic_scroll" id="next_btn">다음 페이지</a>
     </section>
 
     <!-- 2. 가장 많이 찾는 캐스퍼 top3 -->
@@ -175,19 +174,19 @@
       <div class="swiper event_slide">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <a href="#" title="이벤트1"><img src="./images/event01.png" alt="이벤트1"></a>
+            <a href="event.html" title="이벤트1"><img src="./images/event01.png" alt="이벤트1"></a>
           </div>
           <div class="swiper-slide">
-            <a href="#" title="이벤트2"><img src="./images/event02.jpg" alt="이벤트2"></a>
+            <a href="event.html" title="이벤트2"><img src="./images/event02.jpg" alt="이벤트2"></a>
           </div>
           <div class="swiper-slide">
-            <a href="#" title="이벤트3"><img src="./images/event03.jpg" alt="이벤트3"></a>
+            <a href="event.html" title="이벤트3"><img src="./images/event03.jpg" alt="이벤트3"></a>
           </div>
           <div class="swiper-slide">
-            <a href="#" title="이벤트4"><img src="./images/event04.jpg" alt="이벤트4"></a>
+            <a href="event.html" title="이벤트4"><img src="./images/event04.jpg" alt="이벤트4"></a>
           </div>
           <div class="swiper-slide">
-            <a href="#" title="이벤트5"><img src="./images/event05.jpg" alt="이벤트5"></a>
+            <a href="event.html" title="이벤트5"><img src="./images/event05.jpg" alt="이벤트5"></a>
           </div>
         </div>
         <div class="swiper-pagination"></div>
@@ -233,7 +232,7 @@
             <p class="p02">밤 10시까지 캐스퍼 고객센터(080-500-6000)을 통해 문의 사항을 해결할 수 있고, 현대자동차의<br>직영서비스와 블루핸즈도 이용할 수 있습니다.</p>
           </li>
           <li>
-            <iframe width="100%" src="https://www.youtube.com/embed/MQSGzDRejUM?si=njnA574lxTYaqlzf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="100%" src="https://www.youtube.com/embed/MQSGzDRejUM?si=njnA574lxTYaqlzf" title="캐스퍼 구매안내 영상" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </li>
         </ul>
       </article>
@@ -314,7 +313,7 @@
     <div class="f_inner">
       <h2>
         <a href="index.html" title="하단로고">
-          <img src="./images/logo-hyundai.a9ebdc6.png" alt="">
+          <img src="./images/logo-hyundai.a9ebdc6.png" alt="하단로고">
         </a>
       </h2>
 
@@ -393,7 +392,7 @@
     $(document).ready(function(){
       //1. 변수선언
       let h1 = $('header h1 img');
-      let gnb = $('nav a');
+      let gnb = $('header nav a');
       let h_icon = $('header span.fas');
       let m_nav = $('#m_nav > ul li');
 

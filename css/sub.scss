@@ -1,0 +1,54 @@
+//sub.scss
+//서브페이지 헤더, 푸터 공통서식
+@use 'common' as *;
+
+header{
+  position:static;
+}
+
+//메인메뉴서식
+header nav .gnb a{
+  color:$txt_color1;
+}
+
+header .nav_icon span.fas{
+  color:$txt_color1;
+}
+
+//로그인 서식
+form{
+  padding:100px 0px;
+  background: #e6e5e5;
+  fieldset{
+      // border:1px solid #333;
+      width:250px;
+      margin:0 auto;
+      text-align: center;
+      line-height:30px;
+    legend{
+      font-size:$t_size_t1;
+      padding-bottom: 10px;
+    }
+    p{
+        margin:0 auto;
+        padding:5px 0px;
+
+      >#id_txt,#pw_txt{
+        width:250px;height:35px;
+        border:none;
+        text-indent: 5px;
+      }
+
+    }
+    .p01{ text-align:left;}
+
+    #login_btn{
+      width:250px !important;
+      background: $txt_color5;
+      color:$txt_color2;
+      height:35px;
+      border:none;
+    }
+
+  }
+}

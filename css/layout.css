@@ -25,7 +25,7 @@ address {
 }
 
 .h_txt_color {
-  color: #fff !important;
+  color: #333 !important;
 }
 
 .modal {
@@ -86,7 +86,7 @@ header > .nav_icon {
   position: absolute;
   top: 24px;
 }
-header > .nav_icon span:last-child {
+header > .nav_icon > span:last-child {
   display: none;
 }
 header > .nav_icon span.fas {
@@ -183,7 +183,6 @@ header nav .gnb a:hover {
 
 footer {
   background: #1C1A1D;
-  height: 177px;
   padding: 40px 0px;
 }
 footer > .f_inner {

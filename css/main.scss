@@ -9,6 +9,7 @@ main{
   overflow:hidden;
   clear:both;//header영역에서 혹시 사용된 float속성이 있다면 float속성해제한다.
   > #movie{
+    // display:none;
     height:100vh;
     background: $line_color_g;
     overflow: hidden;
@@ -20,6 +21,7 @@ main{
       text-align: center;
       z-index: 100;
       color:$txt_color2;
+      
       > h2{
         font-size:60px;
         text-transform: uppercase;
@@ -50,7 +52,9 @@ main{
     #next_btn{
       //글자숨기기
       display:inline-block;
-      text-indent:-9999px;
+      // text-indent:-9999px; 푸터밑에 여백생김
+      // font-size:0px; //방법1
+      color:rgba(0,0,0,0); //방법2
       position: absolute;
       bottom:40px;left:50%;
       transform: translate(-50%,-50%);

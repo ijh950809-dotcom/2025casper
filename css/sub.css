@@ -67,4 +67,51 @@ address {
   position: absolute;
   border-top: 2px solid #333;
   line-height: 30px;
-}/*# sourceMappingURL=common.css.map */
+}
+
+header {
+  position: static;
+}
+
+header nav .gnb a {
+  color: #333;
+}
+
+header .nav_icon span.fas {
+  color: #333;
+}
+
+form {
+  padding: 100px 0px;
+  background: #e6e5e5;
+}
+form fieldset {
+  width: 250px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 30px;
+}
+form fieldset legend {
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+form fieldset p {
+  margin: 0 auto;
+  padding: 5px 0px;
+}
+form fieldset p > #id_txt, form fieldset p #pw_txt {
+  width: 250px;
+  height: 35px;
+  border: none;
+  text-indent: 5px;
+}
+form fieldset .p01 {
+  text-align: left;
+}
+form fieldset #login_btn {
+  width: 250px !important;
+  background: #052B58;
+  color: #fff;
+  height: 35px;
+  border: none;
+}/*# sourceMappingURL=sub.css.map */

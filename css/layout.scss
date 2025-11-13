@@ -19,7 +19,7 @@ header{
     position:absolute;
     top:24px;
   }
-  >.nav_icon span:last-child{
+  >.nav_icon > span:last-child{
     display: none;
   }
   >.nav_icon span.fas{
@@ -112,7 +112,6 @@ justify-content: space-around;
 //footer
 footer{
   background: $bg_color_g;
-  height:177px;
   padding:40px 0px;
   >.f_inner{
     width:1200px;
